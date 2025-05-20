@@ -455,3 +455,4 @@ public struct SOLRPCLatestBlockhashValue: Codable {
     public let blockhash: String
     public let lastValidBlockHeight: UInt64
 }
+
