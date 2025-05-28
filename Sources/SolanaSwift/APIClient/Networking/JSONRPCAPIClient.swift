@@ -241,12 +241,12 @@ public class JSONRPCAPIClient: SolanaAPIClient {
             var message = response.message
             if let readableMessage = response.data?.logs?
                 .first(where: { $0.contains("Error:") })?
-                .components(separatedBy: "Error: ")
+                .components(separatedBy: "Error: ")? 
                 .last
             {
                 message = readableMessage
             } else if let readableMessage = response.message?
-                .components(separatedBy: "Transaction simulation failed: ")
+                .components(separatedBy: "Transaction simulation failed: ")?
                 .last
             {
                 message = readableMessage
