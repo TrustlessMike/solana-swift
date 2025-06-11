@@ -21,6 +21,7 @@ class SocketTests: XCTestCase {
         let expectation = XCTestExpectation()
         let delegate = MockSocketDelegate()
         delegate.onConected = {
+            XCTAssertTrue(self.socket.isConnected)
             Task {
                 let _ = try await self.socket.accountSubscribe(publickey: "fasdfasdf") // native address
 
@@ -74,6 +75,7 @@ class SocketTests: XCTestCase {
             XCTAssertEqual(notification.subscription, 24040)
         }
         delegate.onDisconnected = {
+            XCTAssertFalse(self.socket.isConnected)
             expectation.fulfill()
         }
 
