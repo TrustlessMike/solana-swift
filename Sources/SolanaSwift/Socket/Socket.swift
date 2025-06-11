@@ -262,7 +262,7 @@ extension Socket: URLSessionWebSocketDelegate {
         }
         delegate?.connected()
 
-        Logger.log(event: "urlSession", message: "Socket disconnected", logLevel: .debug)
+        Logger.log(event: "urlSession", message: "Socket connected", logLevel: .debug)
 
         asyncTask = Task.detached { [weak self] in
             while true {
