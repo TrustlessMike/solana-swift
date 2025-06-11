@@ -50,7 +50,7 @@ public extension SolanaBlockchainClient {
     /// Prepare instructions for creating associated token account and close if needed
     /// - Parameters:
     ///   - owner: The owner of new WSOL account
-    ///   - mint: The mint of ther token
+    ///   - mint: The mint of the token
     ///   - feePayer: The payer of the transaction (usually the owner)
     ///   - closeAfterward: close after done or not
     /// - Returns: AccountInstructions that contains needed instructions, signers, .etc
