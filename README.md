@@ -18,7 +18,7 @@ Solana-blockchain client, written in pure swift.
 [See more](https://github.com/p2p-org/solana-swift/blob/main/CHANGELOG.md)
 
 ### v2.0
-- From v2.0.0 we officially omited Rx library and a lot of dependencies, thus we also adopt swift concurrency to `solana-swift`. [What have been changed?](https://github.com/p2p-org/solana-swift/issues/42)
+- From v2.0.0 we officially omitted Rx library and a lot of dependencies, thus we also adopt swift concurrency to `solana-swift`. [What have been changed?](https://github.com/p2p-org/solana-swift/issues/42)
 - For those who still use `SolanaSDK` class, follow [this link](https://github.com/p2p-org/solana-swift/blob/deprecated/1.3.8/README.md)
 
 ## Features
